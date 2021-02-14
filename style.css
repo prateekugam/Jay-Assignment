@@ -1,0 +1,514 @@
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+.container {
+    padding-left: 20%;
+    padding-right:20%;
+}
+
+.mainimage {
+    background: url("./Images/mainback.png") ;
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 900px;
+    background-position: center;
+
+    
+}
+
+.headerimage {
+    display: flex;
+    justify-content: space-between;
+}
+
+.leftgroup {
+    padding-left: 80px;
+    padding-top: 20px;
+}
+
+.rightgroup {
+    padding-top: 20px;
+}
+
+.leftimage {
+    width: 170px;
+}
+
+.rightimage {
+    width: 400px;
+}
+
+.navigation {
+    display: flex;
+    justify-content: space-between;
+}
+
+.journeybox {
+    width: 40%;
+    background-color: #303236;
+    border: 2px solid #6fccdf;
+    float: right;
+    margin-right: 100px;
+    margin-top: 20px;
+    overflow: hidden;
+    border-radius: 36px 0px;
+    
+}
+
+/* .journeybox:before {
+    content: "";
+    position:absolute;
+    margin:-20px;
+    width:40px;
+    height:40px;
+    transform:rotate(45deg);
+    background-color:#303236; 
+    box-shadow: 0 0 0 2px #6fccdf;
+} */
+
+.journeybox .journeyheading {
+    color: #6fccdf;
+    text-align: center;
+    padding-top: 20px;
+    font-weight: bold;
+    font-size: 16px;
+}
+
+.journeybox .emailaddress {
+    color: white;
+    text-align: center;
+    padding-top: 10px;
+    font-size: 12px;
+    margin-right: 45px;
+}
+
+.emailform {
+    text-align: center;
+    margin-right: 40px;
+    padding-top: 10px;
+}
+
+.emailform input[type=text] {
+    width: 90%;
+    padding: 7px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    margin-left: 40px;
+}
+
+.emailbutton {
+    padding-top: 20px;
+    padding-bottom: 20px;
+
+}
+
+.kite {
+    padding-left: 45px;
+}
+
+.halo {
+    width: 220px;
+}
+
+.emailbutton input[type=submit] {
+    background-color: #fdc23d;
+    color: #010103;
+    padding: 6px 22px;
+    border: none;
+    cursor: pointer;
+    margin-left: 47px;
+    font-weight: 800;
+  }
+
+  .journeyboxtwo {
+    width: 40%;
+    background-color: #303236;
+    border: 2px solid #6fccdf;
+    float: right;
+    margin-right: 100px;
+    margin-top: 20px;
+    border-radius: 36px 0px;
+    display: flex;
+    opacity: 0.9;
+  }
+
+  .packets {
+    width: 150px;
+    height: 160px;
+    margin-left: -30px;
+  }
+
+  .journeyboxtwo .journeyheading {
+    color: #6fccdf;
+    text-align: center;
+    padding-top: 20px; 
+    font-weight: bold;
+    font-size: 16px;
+    margin-right: 30px;
+
+  }
+
+  .journeyboxtwo .emailaddress {
+    color: white;
+    text-align: center;
+    padding-top: 10px;
+    font-size: 11px;
+    margin-right: 8px;
+    text-align: left;
+}
+
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    padding-top: 30px; /* Location of the box */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+  }
+
+  .modalheading {
+    text-align: center;
+    color: #6fccdf;
+}
+
+.select{
+    
+    padding: 4px 8px;
+    min-width: 80px;
+}
+
+.close {
+    color: white;
+    float: right;
+    z-index: 999999;
+    font-size: 28px;
+    font-weight: bold;
+    background:  #6fccdf;
+    width: 40px;
+    position: absolute;
+    height: 40px;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    display: flex;
+    right: -13px;
+    top: -19px
+}
+
+.headertext {
+    font-size: 14px;
+    /* padding-left: 95px;
+    padding-right: 20px; */
+    line-height: 22px;
+    text-align: center;
+}
+
+.headerquestion {
+    font-size: 14px;
+    text-align: center;
+}
+
+   
+  /* Modal Content */
+  .modal-content {
+    position: relative;
+    background-color: #303236;
+    margin: auto;
+    padding: 0;
+    border: 2px solid #6fccdf;
+    width: 55%;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
+    -webkit-animation-name: animatetop;
+    -webkit-animation-duration: 0.4s;
+    animation-name: animatetop;
+    animation-duration: 0.4s
+  }
+  
+  /* Add Animation */
+  @-webkit-keyframes animatetop {
+    from {top:-300px; opacity:0} 
+    to {top:0; opacity:1}
+  }
+  
+  @keyframes animatetop {
+    from {top:-300px; opacity:0}
+    to {top:0; opacity:1}
+  }
+  
+  /* The Close Button */
+  .close {
+    color: white;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+  }
+  
+  .close:hover,
+  .close:focus {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+  }
+  
+  .modal-header {
+    padding: 2px 16px;
+    background-color:  #303236;;
+    color: white;
+  }
+
+  .box{
+    margin: 0 30%;
+  }
+
+  .input_field{
+      width: 100%;
+      padding: 4px 8px;
+  }
+
+  .dob{
+      justify-content: space-between !important;
+  }
+
+  .row {
+    display: flex; justify-content: center;
+    margin-bottom: 12px;
+  }
+  
+  .modal-body {padding: 2px 16px; }
+  
+  .modal-footer {
+    padding: 2px 16px;
+    background-color:  #303236;
+    color: white;
+    margin: 0 30%;
+  }
+
+  .mainpara {
+    display: flex;
+    margin: 0 30%;
+    justify-content: space-between;
+    margin-bottom: 15px;
+}
+
+.checktext {
+    font-size: 12px;
+    color: white;
+    margin-left: 5px;
+}
+
+.enternow {
+    background-color: #fdc23d;
+    color: #010103;
+    padding: 6px 22px;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+    margin-bottom: 15px;
+    margin-top: 15px;
+    
+}
+
+a {
+    color: #6fccdf;
+}
+
+.googlecaptcha {
+    display: flex;
+    justify-content: center;
+}
+
+@media only screen and (max-width : 767px) {
+
+    .container {
+        display: flex;
+        justify-content: center;
+        width: 100%;
+        padding: 0px;
+    }
+
+    
+
+    .mainimage {
+    background: url("./Images/imagemobile.png") ;
+    min-height: 1650px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    
+    }
+    .headerimage {
+        display: block;
+    }
+
+    .leftgroup {
+        display: flex;
+        justify-content: center;
+       padding: 16px 0px;
+    }
+
+    
+
+    .navigation {
+        display: block;
+    }
+
+    .kite {
+        padding-left: 0px;
+        text-align: center;
+    }
+
+    .halo {
+        width: 175px;
+    }
+
+    .journeybox {
+        width: 90%;
+        float: unset;
+        margin: 16px;
+    }
+
+    .journeybox .journeyheading {
+        font-size: 17px;
+    }
+
+    .journeybox .emailaddress {
+        font-size: 15px;
+        margin-right: 2px;
+
+    }
+
+    .emailform {
+        text-align: center;
+        padding-top: 10px;
+    }
+
+    .emailform input[type=text] {
+        width: 100%;
+        padding: 7px;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+        margin-left: 10px;
+    }
+
+    .emailbutton input[type=submit] {
+        margin-left: 12px;
+        width: 92%;
+    }
+
+    .journeyboxtwo {
+        width: 90%;
+        float: unset;
+        margin: 15px;
+    }
+
+    .packets {
+        width: 100px;
+        height: 140px;
+        margin-left: -2px;
+    }
+
+    .journeyboxtwo .journeyheading {
+        font-size: 17px;
+    }
+
+    .journeyboxtwo .emailaddress {
+        padding-top: 10px;
+        font-size: 14px;
+        margin-right: 4px;
+    }
+
+    .headertext {
+        font-size: 14px;
+        padding-left: 0px; 
+        padding-right: 0px; 
+        line-height: 22px;
+    }
+
+    .box {
+        margin: 0 0%;
+    }
+    
+    .modal-content {
+        width: 90%;
+    }
+
+    .mainpara {
+        
+        margin: 0px 0% 15px;
+        
+    }
+
+   .modal-footer {
+    margin: 0px 0% ;
+    margin-bottom: 15px;
+   }
+    
+}
+
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) {
+    .container {
+        padding-left: 7%;
+        padding-right: 6%;
+    }
+
+    .leftgroup {
+        padding-left: 54px;
+    }
+
+    .rightimage {
+        width: 340px;
+    }
+
+    .journeybox .emailaddress {
+        margin-right: 0px;
+        font-size: 13px;
+    }
+
+    .emailform input[type=text] {
+        width: 95%;
+        margin-left: 17px;
+    }
+
+    .emailbutton input[type=submit] {
+        margin-left: 20px;
+    }
+
+    .modal-content {
+        width: 80%;
+    }
+
+    .journeyboxtwo .journeyheading  {
+        font-size: 13px;
+    }
+}
+
+@media only screen and (max-width: 320px)  {
+    .journeybox {
+        width: 85%;
+        float: unset;
+        margin: 47px;
+    }
+
+    .journeyboxtwo {
+        width: 85%;
+        float: unset;
+        margin: 47px;
+    }
+
+    .mainimage {
+        min-height: 1800px;
+    } 
+
+}
+
+
+    
+
+
+
