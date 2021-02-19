@@ -1,6 +1,30 @@
+@import url("http://fast.fonts.net/t/1.css?apiType=css&projectid=80d33c19-929f-4d11-a8f6-3dae838c9efa");
+    @font-face{
+        font-family:"Industry W05 Bold";
+        src:url("Fonts/9af0d4f1-307f-4a22-b5a2-c55bf0d9ec8b.woff2") format("woff2"),url("Fonts/8a08b405-1b57-425c-9bc2-f90381b404b9.woff") format("woff");
+    }
+    @font-face{
+        font-family:"Normative W01 Regular";
+        src:url("Fonts/8dcd4d2c-97e7-4b6a-acd3-8e95ebe05d5c.woff2") format("woff2"),url("Fonts/956fe778-246a-47d9-b148-4e983556fb3c.woff") format("woff");
+    }
+    @font-face{
+        font-family:"Normative W01 Medium";
+        src:url("Fonts/5ec7316a-9a46-4ed9-953e-703238ff1087.woff2") format("woff2"),url("Fonts/0c63116f-e23f-4b0a-8fd2-054456c9deb3.woff") format("woff");
+    }
+    @font-face{
+        font-family:"Normative W01 Bold";
+        src:url("Fonts/e923893f-121b-4553-b569-7c74b45de7aa.woff2") format("woff2"),url("Fonts/eeb988df-8a91-4ad2-bc81-43dfc56749ea.woff") format("woff");
+    }
+
+
 
 body {
-    font-family: Arial, Helvetica, sans-serif;
+    /* font-family: Arial, Helvetica, sans-serif;  */
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+    
 }
 .container {
     padding-left: 20%;
@@ -11,7 +35,7 @@ body {
     background: url("./Images/mainback.png") ;
     background-repeat: no-repeat;
     background-size: cover;
-    min-height: 900px;
+    height: 560px;
     background-position: center;
 
     
@@ -52,9 +76,12 @@ body {
     margin-right: 100px;
     margin-top: 20px;
     overflow: hidden;
-    border-radius: 36px 0px;
+    /* border-radius: 36px 0px; */
+    
     
 }
+
+
 
 /* .journeybox:before {
     content: "";
@@ -72,7 +99,8 @@ body {
     text-align: center;
     padding-top: 20px;
     font-weight: bold;
-    font-size: 16px;
+    font-size: 19px;
+    font-family:"Normative W01 Bold";
 }
 
 .journeybox .emailaddress {
@@ -80,7 +108,8 @@ body {
     text-align: center;
     padding-top: 10px;
     font-size: 12px;
-    margin-right: 45px;
+    margin-right: 55px;
+    font-family:"Normative W01 Regular";
 }
 
 .emailform {
@@ -117,8 +146,8 @@ body {
     padding: 6px 22px;
     border: none;
     cursor: pointer;
-    margin-left: 47px;
-    font-weight: 800;
+    margin-left: 40px;
+    font-family:"Normative W01 Bold";
   }
 
   .journeyboxtwo {
@@ -128,7 +157,7 @@ body {
     float: right;
     margin-right: 100px;
     margin-top: 20px;
-    border-radius: 36px 0px;
+    /* border-radius: 36px 0px; */
     display: flex;
     opacity: 0.9;
   }
@@ -141,11 +170,13 @@ body {
 
   .journeyboxtwo .journeyheading {
     color: #6fccdf;
-    text-align: center;
+    text-align: left;
     padding-top: 20px; 
     font-weight: bold;
     font-size: 16px;
     margin-right: 30px;
+    font-size: 19px;
+    font-family:"Normative W01 Bold";
 
   }
 
@@ -156,13 +187,15 @@ body {
     font-size: 11px;
     margin-right: 8px;
     text-align: left;
+    font-family:"Normative W01 Regular";
+
 }
 
 .modal {
     display: none; /* Hidden by default */
     position: fixed; /* Stay in place */
     z-index: 1; /* Sit on top */
-    padding-top: 30px; /* Location of the box */
+    padding-top: 15px; /* Location of the box */
     left: 0;
     top: 0;
     width: 100%; /* Full width */
@@ -175,6 +208,8 @@ body {
   .modalheading {
     text-align: center;
     color: #6fccdf;
+    font-family:"Industry W05 Bold";
+
 }
 
 .select{
@@ -198,8 +233,9 @@ body {
     border-radius: 50%;
     display: flex;
     right: -13px;
-    top: -19px
+    top: -15px
 }
+
 
 .headertext {
     font-size: 14px;
@@ -207,18 +243,20 @@ body {
     padding-right: 20px; */
     line-height: 22px;
     text-align: center;
+    font-family:"Normative W01 Regular";
 }
 
 .headerquestion {
     font-size: 14px;
     text-align: center;
+    font-family:"Normative W01 Regular";
 }
 
    
   /* Modal Content */
   .modal-content {
     position: relative;
-    background-color: #303236;
+    background-color: black;
     margin: auto;
     padding: 0;
     border: 2px solid #6fccdf;
@@ -258,12 +296,12 @@ body {
   
   .modal-header {
     padding: 2px 16px;
-    background-color:  #303236;;
+    background-color: black;
     color: white;
   }
 
   .box{
-    margin: 0 30%;
+    margin: 0 28%;
   }
 
   .input_field{
@@ -284,14 +322,14 @@ body {
   
   .modal-footer {
     padding: 2px 16px;
-    background-color:  #303236;
+    background-color:  black;
     color: white;
-    margin: 0 30%;
+    margin: 0 27%;
   }
 
   .mainpara {
     display: flex;
-    margin: 0 30%;
+    margin: 0 27%;
     justify-content: space-between;
     margin-bottom: 15px;
 }
@@ -300,6 +338,7 @@ body {
     font-size: 12px;
     color: white;
     margin-left: 5px;
+    font-family:"Normative W01 Regular";
 }
 
 .enternow {
@@ -311,6 +350,7 @@ body {
     width: 100%;
     margin-bottom: 15px;
     margin-top: 15px;
+    font-family:"Normative W01 Bold";
     
 }
 
@@ -323,25 +363,134 @@ a {
     justify-content: center;
 }
 
+.mobilegroup {
+    display: none;
+}
+
+.footer {
+    width: 100%;
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    padding-top: 15px;
+}
+
+.footerlink {
+
+    color: #6fccdf;
+    justify-content: center;
+    font-size: 9px;
+    font-weight: 700;
+    padding: 0 8px;
+    font-family:"Industry W05 Bold";
+    
+    
+}
+
+.borderright {
+    border-right: 2px solid #6fccdf;
+
+}
+
+.footerbox {
+    width: 100%;
+    background-color: black;
+}
+
+.footersubtext {
+    
+    color: white;
+    text-align: center;
+    font-size: 10px;
+    padding-top: 10px;
+    padding-bottom: 2px;
+    font-family:"Normative W01 Regular";
+}
+
+.footertext {
+    
+    color: white;
+    text-align: center;
+    padding-top: 10px;
+    font-size: 10px;
+    font-family:"Normative W01 Regular";
+}
+
+.footerimage {
+    
+    text-align: center;
+    padding-top: 50px;
+}
+
+.monimage {
+   width: 15%;
+}
+
+.footersmalltext {
+    
+    color: white;
+    text-align: center;
+    padding-top: 5px;
+    padding-bottom:50px;
+    font-size:10px;
+    font-family:"Normative W01 Regular";
+}
+
+.footertext p {
+    margin: 0 5%;
+}
+
+.birthdate {
+    color: white;
+    font-size: 12px;
+    font-family: 'Industry W05 Bold';
+    padding-bottom: 10px;
+}
+
+
+
+
+
+
 @media only screen and (max-width : 767px) {
 
-    .container {
-        display: flex;
-        justify-content: center;
-        width: 100%;
-        padding: 0px;
-    }
-
     
+
+    .container {
+        
+        width: 100%;
+        display: block;
+        padding-left: 0%;
+        padding-right: 0%;
+    }
 
     .mainimage {
-    background: url("./Images/imagemobile.png") ;
-    min-height: 1650px;
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
-    
+        background: url("./Images/imagemobile.png") ;
+        height: 900px;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: 100% 92%;
+        width: 100%;
+        
+        }
+
+    .rightgroup {
+        display: none;
     }
+
+    .mobilegroup {
+        display: block;
+        padding-left: 10px;
+    }
+
+    .rightimage {
+        width: 100%;
+    }
+
+
+    
+
+    
     .headerimage {
         display: block;
     }
@@ -361,6 +510,7 @@ a {
     .kite {
         padding-left: 0px;
         text-align: center;
+        padding-bottom: 20px;
     }
 
     .halo {
@@ -370,7 +520,8 @@ a {
     .journeybox {
         width: 90%;
         float: unset;
-        margin: 16px;
+        margin: 0 auto 50px;
+        padding: 10px;
     }
 
     .journeybox .journeyheading {
@@ -379,8 +530,8 @@ a {
 
     .journeybox .emailaddress {
         font-size: 15px;
-        margin-right: 2px;
-
+        text-align: left;
+        margin-left: 12px;
     }
 
     .emailform {
@@ -404,17 +555,19 @@ a {
     .journeyboxtwo {
         width: 90%;
         float: unset;
-        margin: 15px;
+        margin: 0 auto 50px;
+        padding: 5px;
     }
 
     .packets {
-        width: 100px;
-        height: 140px;
-        margin-left: -2px;
+        width: 101px;
+        height: 153px;
+        margin-left: -13px;
     }
 
     .journeyboxtwo .journeyheading {
         font-size: 17px;
+        text-align: left;
     }
 
     .journeyboxtwo .emailaddress {
@@ -424,7 +577,7 @@ a {
     }
 
     .headertext {
-        font-size: 14px;
+        font-size: 12px;
         padding-left: 0px; 
         padding-right: 0px; 
         line-height: 22px;
@@ -448,8 +601,118 @@ a {
     margin: 0px 0% ;
     margin-bottom: 15px;
    }
+
+   .journeybox .journeyheading  {
+    text-align: left;
+    margin-left: 10px;
+
+   }
+
+   .footer {
+    width: 100%;
+    background-color: black;
+    flex-wrap: wrap;
+    padding-top: 20px;
+}
+
+.footerlink {
+
+   
+    font-size: 12px;
+    padding: 0 6px;
+    
     
 }
+
+.footersubtext {
+    padding-bottom: 15px;
+}
+
+.borderright {
+    border-right: 2px solid #6fccdf;
+
+}
+
+.footerbox {
+    width: 100%;
+    background-color: black;
+}
+
+.footersubtext {
+    font-size: 12px;
+}
+
+.footertext {
+    font-size: 12px;
+}
+
+.monimage {
+    width: 35%;
+}
+
+.footersmalltext {
+    font-size: 12px;
+}
+
+.modal  {
+    padding-top: 10px;
+}
+.close {
+    width: 34px;
+    height: 33px;
+    right: -14px;
+    top: -10px;
+}
+}
+
+
+@media screen and (max-width: 767px) and (orientation: landscape) {
+
+    .mainimage {
+        height: 1050px;
+        background-position: 100% 97%;
+    }
+
+    .emailbutton input[type=submit] {
+        margin-left: 12px;
+        width: 95%;
+    }
+
+    .mainpara {
+        justify-content: flex-start;
+
+    }
+
+    .select {
+        padding: 4px 8px;
+        min-width: 160px;
+    }
+
+    .mobilegroup {
+        display: block;
+        padding-left: 25px;
+    }
+
+}
+
+/* @media screen and (max-width: 812px) and (orientation: landscape) {
+
+    .mainimage {
+        
+        height: 570px;
+        
+    }
+
+    .footerlink  {
+        font-size: 8px
+    }
+} */
+
+
+
+
+    
+
 
 @media only screen and (min-device-width: 768px) and (max-device-width: 1024px) {
     .container {
@@ -486,29 +749,107 @@ a {
     .journeyboxtwo .journeyheading  {
         font-size: 13px;
     }
+
+    .footerlink {
+        font-size: 8px;
+    }
+
+    .packets {
+        width: 150px;
+        height: 165px;
+        margin-left: -30px;
+    }
 }
 
 @media only screen and (max-width: 320px)  {
+
+    .container {
+        width: 100%;
+        display: block;
+        padding-left: 0%;
+        padding-right: 0%;
+    }
+
     .journeybox {
         width: 85%;
         float: unset;
-        margin: 47px;
+        margin: 0 auto 50px;
     }
 
     .journeyboxtwo {
         width: 85%;
         float: unset;
-        margin: 47px;
+        margin: 0 auto 50px;
     }
 
-    .mainimage {
-        min-height: 1800px;
+    .journeybox .journeyheading {
+        font-size: 15px;
+    }
+
+    .journeybox .emailaddress {
+        font-size: 13px;
+    }
+
+    .journeyboxtwo .journeyheading {
+        font-size: 15px;
+    }
+
+    .journeyboxtwo .emailaddress {
+        font-size: 12px;
+    }
+
+    .mobilegroup {
+        padding-left: 16px;
+    }
+    
+    .modal {
+        padding-top: 16px;
+    }
+
+
+    .close {
+        
+        width: 28px;
+        height: 25px;
+        right: -5px;
+        top: -12px;
+        font-size: 24px;
     } 
+    
+    .modal-content {
+        width: 96%;
+    }
+    
+    
+    .packets {
+        width: 105px;
+        height: 140px;
+        margin-left: -16px;
+    }
 
 }
 
+ @media screen and (max-width: 568px) and (orientation: landscape) {
 
-    
+    .mainimage {
+        height: 950px;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: 100% 92%;
+        width: 100%;
+    }
 
+    .select {
+        min-width: 150px;
+    }
 
+    .rightimage {
+        width: 96%;
+        margin-left: 22px;
+    }
 
+    .mobilegroup {
+        display: block;
+        padding-left: 0px;
+    }
+} 
